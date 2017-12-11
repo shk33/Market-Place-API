@@ -22,9 +22,16 @@ gem 'jquery-rails'
 #Api gems
 gem 'active_model_serializers'
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+group :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "factory_girl_rails"
+  gem 'ffaker'
+end
+
 group :doc do
-	# Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
