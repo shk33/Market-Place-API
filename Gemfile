@@ -25,6 +25,9 @@ gem 'active_model_serializers'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# Authentication
+gem 'devise'
+
 group :test do
   gem "rspec-rails", "~> 2.14"
   gem "factory_girl_rails"
